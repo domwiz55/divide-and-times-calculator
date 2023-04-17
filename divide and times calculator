@@ -1,0 +1,16 @@
+num1 = float(input("Enter the first number: "))
+num2 = float(input("Enter the second number: "))
+
+quit = False
+while not quit:
+    operation = input("Enter 'd' to divide, 'm' to multiply, or 'q' to quit: ")
+    if operation == 'd':
+        result = num1 / num2
+        print(f"{num1} divided by {num2} is {result}")
+    elif operation == 'm':
+        result = num1 * num2
+        print(f"{num1} times {num2} is {result}")
+    elif operation == 'q':
+        quit = True
+    else:
+        print("Invalid input. Please try again.")
